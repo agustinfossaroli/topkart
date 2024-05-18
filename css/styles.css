@@ -153,7 +153,6 @@ button {
 .reservas {
     padding: 1rem;
     background-color: #0000004b;
-    width: 80%;
 }
 .section {
     margin-top: 5rem;
@@ -217,12 +216,10 @@ footer ul li {
     font-style: normal;
 }
 .icon {
-    padding: 2rem;
     height: 3.5rem;
     width: 3.5rem;
 }
 .arrow {
-    padding: 1rem;
     margin-bottom: 1rem;
     height: 4rem;
     width: 4rem;
@@ -300,6 +297,7 @@ div svg{
     }
     .reservas {
         height: 85rem;
+        width: 80%;
         margin-left: 11rem;
     }
     .iframe {
@@ -359,6 +357,7 @@ div svg{
     }
     .reservas {
         height: 75rem;
+        width: 80%;
         margin-left: 18rem;
     }
     .iframe {
@@ -398,7 +397,6 @@ button {
 button:hover {
     border-color: #10bb00;
 }
-
 /*kart*/
 /*GRIDS*/
 .grid-info {
@@ -458,7 +456,6 @@ button:hover {
     grid-area: boton;
     margin-top: 2.5rem;
 }
-
 .grid-container {
     grid-template-columns: 40rem 60rem;
     grid-template-rows: 24rem 34rem 2rem;
@@ -503,8 +500,11 @@ button:hover {
     margin-top: 7rem;
 }
 .reservas {
-    height: 68rem;
+    display: flex;
+    flex-direction: column;
+    height: 73rem;
     margin-left: 12rem;
+    width: 90%;
 }
 footer ul  {
     margin-left: 10rem;
@@ -513,6 +513,6 @@ footer ul  {
     border-color: #0ca201;
 }
 .btn-wpp {
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
 }
