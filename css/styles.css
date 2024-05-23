@@ -20,32 +20,72 @@ body {
     background-image: url("../assets/pavimento2.jpg");
     overflow-x: hidden;
 }
+/**/
+header {
+    padding: 1rem;
+    background-color: #00000062;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul li {
+    list-style-type: none;
+}
+/**/
 header nav a img {
     border-style: solid;
     border-color: #000000;
-    margin-top: 1rem;
     border-width: 0.3rem;
     max-width: 13rem;
     max-height: 8rem;
+    margin-left: 2rem;
 } 
 body header nav {
     background-image: url("../assets/header2.png");
     width: 100%;
     height: 13rem;
 }
-body header nav ul li {
+.text {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-nav {
+    background-color:#000000a0;
+}
+/* body header nav ul li {
     list-style-type: none;
     display: inline-block;
     width: 100%;
     text-align: center;
-}
-header nav ul {
+} */
+/* header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: #00000062;
     height: 13rem;
+} */
+header nav ul li a {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 a {
     font-size: 3.5rem;
@@ -55,6 +95,14 @@ a {
     font-weight: 400;
     font-style: normal;
 }
+/**/
+.color-icon {
+    background-color: #00000051;
+    color: #ffe100 !important;
+    height: 4rem;
+    width: 4rem;
+}
+/**/
 section {
     margin-top: 4rem;
 }
@@ -227,7 +275,7 @@ p {
 }
 .btn-wpp {
     border-radius: 70%;
-    padding: 2.5rem;
+    padding: 2rem;
     background-color: #000000d9;
     position: fixed;
     bottom: 10rem;
@@ -236,7 +284,7 @@ p {
     display: flex;
     align-items:center;
 }
-div svg{
+.svg{
     display: flex;
     color: #0ca201;
     width: 4rem;
@@ -358,7 +406,7 @@ div svg{
         padding: 1rem;
     }
     .formulario {
-        width: 25rem;
+        width: 28rem;
         margin: 0 auto;
     }
     .iframecont {
@@ -386,8 +434,23 @@ body header nav ul li {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-header nav ul li a:hover {
+.class:hover {
     color: #ffe100;
+}
+body header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00000062;
+    height: 13rem;
+    width: 100%;
 }
 h1 {
     font-size: 6rem;
@@ -504,17 +567,20 @@ button:hover {
     margin-left: 1rem;
     margin-top: 7rem;
 }
+.textform {
+    font-size: 3.5rem;
+}
 .iframecont {
     margin-top: 3rem;
     text-align: center;
 }
 .iframe {
     margin-top: 7rem;
-    height: 70rem;
+    height: 67rem;
     width: 70rem;
 }
 .formulario {
-    width: 27rem;
+    width: 30rem;
     margin: 0 auto;
 }
 form {
