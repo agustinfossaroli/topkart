@@ -1,20 +1,20 @@
 @mixin mobile {
     @media screen and (min-width: 320px) and (max-width: 767px) {
         @content;
-        font-size: 25%;   
+        /*font-size: 25%;*/   
     }
 }
 
 @mixin tablet {
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         @content;
-        font-size: 35%;
+        /*font-size: 35%;*/
     }
 }
 
 @mixin dekstop {
     @media screen and (min-width: 1024px) {
         @content;
-        font-size: 55%;
+        /*font-size: 55%;*/
     }
 }    

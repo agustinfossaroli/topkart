@@ -12,7 +12,6 @@ header {
                 --bs-nav-link-hover-color: #ffe100;
                 }
             .text {
-                font-size: 3.5rem;
                 text-decoration: none;
                 color: $blanco;
                 font-family: "Bebas Neue", sans-serif;
@@ -113,6 +112,10 @@ header {
                     max-width: 13rem;
                     max-height: 8rem;
                     margin-left: 2rem;
+                    &:hover {
+                        max-width: 15rem;
+                        max-height: 10rem;
+                    }
                     }
                 }
             }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -16,7 +17,6 @@ header .navbar-nav {
   --bs-nav-link-hover-color: #ffe100;
 }
 header .text {
-  font-size: 3.5rem;
   text-decoration: none;
   color: #ffffff;
   font-family: "Bebas Neue", sans-serif;
@@ -25,7 +25,7 @@ header .text {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header {
-    font-size: 25%;
+    /*font-size: 25%;*/
   }
   header nav {
     background-image: url("../assets/header2.png");
@@ -65,7 +65,7 @@ header .text {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
-    font-size: 35%;
+    /*font-size: 35%;*/
   }
   header nav {
     background-image: url("../assets/header2.png");
@@ -105,7 +105,7 @@ header .text {
 }
 @media screen and (min-width: 1024px) {
   header {
-    font-size: 55%;
+    /*font-size: 55%;*/
   }
   header nav {
     background-image: url("../assets/header2.png");
@@ -126,11 +126,14 @@ header .text {
     max-height: 8rem;
     margin-left: 2rem;
   }
+  header nav img:hover {
+    max-width: 15rem;
+    max-height: 10rem;
+  }
 }
 
 footer {
   background-color: rgba(0, 0, 0, 0.6470588235);
-  margin-bottom: 1rem;
 }
 footer ul {
   list-style-type: none;
@@ -172,15 +175,14 @@ footer ul .arrow {
 footer .copy {
   display: inline-block;
   color: #ffffff;
-  margin-bottom: 0.8rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   footer {
     height: 9rem;
-    font-size: 25%;
+    /*font-size: 25%;*/
   }
   footer li {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
   }
   footer li h4 {
     font-size: 0.8rem;
@@ -214,16 +216,16 @@ footer .copy {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   footer {
     height: 15rem;
-    font-size: 35%;
+    /*font-size: 35%;*/
   }
   footer li {
-    margin-top: 2rem;
+    margin-top: 1.7rem;
   }
   footer li h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   footer li .info {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   footer li p {
     color: #ffffff;
@@ -247,13 +249,13 @@ footer .copy {
   }
   footer .copy {
     margin-left: 2rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   footer {
     height: 21rem;
-    font-size: 55%;
+    /*font-size: 55%;*/
   }
   footer li {
     margin-top: 3rem;
@@ -290,6 +292,141 @@ footer .copy {
   }
 }
 
+.reserva {
+  list-style-type: none;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.espacio {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+label {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input, select {
+  display: flex;
+  margin-top: 0.5rem;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.iframe {
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-style: solid;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .reserva {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .textform {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .formulario {
+    width: 20rem;
+  }
+  label {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  input, select {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .iframecont {
+    width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .iframe {
+    height: 30rem;
+  }
+  /*font-size: 25%;*/
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .reserva {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 0 auto;
+  }
+  .textform {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .formulario {
+    width: 25rem;
+    margin: 0 auto;
+  }
+  label {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  input, select {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    width: 20rem;
+  }
+  .iframecont {
+    width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .iframe {
+    height: 50rem;
+  }
+  /*font-size: 35%;*/
+}
+@media screen and (min-width: 1024px) {
+  .textform {
+    font-size: 3rem;
+  }
+  .formulario {
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+  label {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+  input, select {
+    margin-top: 0.5rem;
+  }
+  .col-lg-6 {
+    font-size: 2rem;
+  }
+  .iframecont {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .iframe {
+    margin-top: 5rem;
+    height: 50rem;
+    width: 50rem;
+  }
+  /*font-size: 55%;*/
+}
 html {
   font-size: 62.5%;
   /* 1rem = 10px*/
@@ -346,16 +483,6 @@ html body .circuito {
   border-color: #000000;
   border-radius: 5%;
 }
-html body .reserva {
-  list-style-type: none;
-  display: inline-block;
-  margin-bottom: 4rem;
-  color: #ffffff;
-  text-align: center;
-  width: 100%;
-  margin-top: 3rem;
-  margin-left: 1.5rem;
-}
 html body .section {
   margin-top: 5rem;
   text-align: center;
@@ -366,64 +493,60 @@ html body .amarillo {
   background-color: rgba(0, 0, 0, 0.6470588235);
   margin-top: 1rem;
 }
-html body .reserva {
-  list-style-type: none;
-  display: inline-block;
-  color: #ffffff;
-  text-align: center;
-  width: 100%;
-}
-html body .iframe {
-  padding: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  border-style: solid;
-  background-color: #000000;
-  border-width: 1rem;
-  width: 100%;
-}
-html body .espacio {
-  display: inline-block;
-  margin-top: 2rem;
-}
-html body label {
-  display: inline-block;
-  margin-top: 2rem;
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-html body input, html body select {
-  display: flex;
-  margin-top: 0.5rem;
-  color: #000000;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 25rem;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   html body {
-    font-size: 25%;
+    /*font-size: 25%;*/
   }
   html body section {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   html body h1, html body h2 {
-    font-size: 1.5rem;
     color: #ffffff;
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: normal;
     text-align: center;
   }
+  html body .parallax, html body .parallax-dos, html body .parallax-tres, html body .parallax-cuatro {
+    height: 14vh;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html body .parallax {
+    background-image: url("../assets/kartings.jpg");
+  }
+  html body .parallax-dos {
+    background-image: url("../assets/cuatriciclo-inicio.jpg");
+  }
+  html body .parallax-tres {
+    background-image: url("../assets/utv-inicio.jpg");
+  }
+  html body .parallax-cuatro {
+    background-image: url("../assets/circuitoo.jpg");
+  }
+  html body .fijo {
+    height: 75%;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body .fijo a {
+    text-decoration: none;
+  }
+  html body .fijo a h1, html body .fijo a h2 {
+    font-size: 1.5rem;
+  }
   html body h3 {
     font-size: 1.8rem;
-  }
-  html body h4 {
-    font-size: 1.3rem;
   }
   html body b {
     font-size: 1.5rem;
@@ -453,38 +576,6 @@ html body input, html body select {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  html body .reserva {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    margin-left: 0 auto;
-  }
-  html body .textform {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  html body .formulario {
-    width: 20rem;
-    margin: 0 auto;
-  }
-  html body label {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-  html body input, html body select {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    width: 20rem;
-  }
-  html body .iframecont {
-    width: 30rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 3rem;
-  }
-  html body .iframe {
-    height: 30rem;
-  }
   html body .btn-wpp {
     padding: 0.9rem;
     bottom: 5rem;
@@ -497,10 +588,34 @@ html body input, html body select {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   html body {
-    font-size: 35%;
+    /*font-size: 35%;*/
   }
   html body section {
     margin-top: 3rem;
+  }
+  html body .parallax {
+    /* Ajusta el tamaño de la sección parallax */
+    height: 25vh;
+    /* Imagen de fondo */
+    background-image: url("../assets/kart-inicio-t.jpg");
+    /* El fondo se fija cuando se desplaza la página */
+    background-attachment: fixed;
+    /* Posición y tamaño del fondo */
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Crea el efecto parallax */
+    transform: translateZ(0.5);
+    perspective: 1px;
+  }
+  html body .fijo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: contain;
+    text-align: center;
   }
   html body h1, html body h2 {
     font-size: 3rem;
@@ -513,14 +628,12 @@ html body input, html body select {
   html body h3 {
     font-size: 3rem;
   }
-  html body h4 {
-    font-size: 2rem;
-  }
   html body b {
     font-size: 2.5rem;
   }
   html body button {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
   html body .utv {
     display: flex;
@@ -551,38 +664,6 @@ html body input, html body select {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  html body .reserva {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    margin-left: 0 auto;
-  }
-  html body .textform {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  html body .formulario {
-    width: 25rem;
-    margin: 0 auto;
-  }
-  html body label {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  html body input, html body select {
-    margin-top: 0.5rem;
-    font-size: 2rem;
-    width: 20rem;
-  }
-  html body .iframecont {
-    width: 50rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 3rem;
-  }
-  html body .iframe {
-    height: 50rem;
-  }
   html body .btn-wpp {
     padding: 1.5rem;
     bottom: 8rem;
@@ -595,13 +676,37 @@ html body input, html body select {
 }
 @media screen and (min-width: 1024px) {
   html body {
-    font-size: 55%;
+    /*font-size: 55%;*/
   }
   html body section {
     margin-top: 4rem;
   }
+  html body .parallax {
+    /* Ajusta el tamaño de la sección parallax */
+    height: 80vh;
+    /* Imagen de fondo */
+    background-image: url("../assets/kart-inicio.jpg");
+    /* El fondo se fija cuando se desplaza la página */
+    background-attachment: fixed;
+    /* Posición y tamaño del fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Crea el efecto parallax */
+    transform: translateZ(0.5);
+    perspective: 1px;
+  }
+  html body .fijo {
+    /* Cubre la sección parallax */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /*Oscurece un poco la imagen*/
+    text-align: center;
+  }
   html body h1, html body h2 {
-    font-size: 5rem;
+    font-size: 7rem;
     color: #ffffff;
     font-family: "PT Serif", serif;
     font-weight: 700;
@@ -629,6 +734,7 @@ html body input, html body select {
   }
   html body .grid-img-c {
     grid-area: img-c;
+    margin-top: 3rem;
   }
   html body .grid-reservar {
     grid-area: boton;
@@ -652,11 +758,11 @@ html body input, html body select {
   }
   html body .grid-img-cm {
     grid-area: img-cm;
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
   html body .grid-imgm {
     grid-area: imgm;
-    margin-top: 5.3rem;
+    margin-top: 8rem;
   }
   html body .grid-reserva {
     grid-area: botonm;
@@ -721,29 +827,9 @@ html body input, html body select {
     font-size: 2.8rem;
   }
   html body .imgkart {
-    height: 45rem;
-    width: 70rem;
+    height: 38rem;
     margin-left: 1rem;
-  }
-  html body .textform {
-    font-size: 3rem;
-  }
-  html body .iframecont {
-    margin-top: 3rem;
-    text-align: center;
-  }
-  html body .iframe {
-    margin-top: 10rem;
-    height: 50rem;
-    width: 50rem;
-  }
-  html body .formulario {
-    width: 30rem;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
-  html body form {
-    margin-left: 4rem;
+    margin-top: 5rem;
   }
   html body .btn-wpp {
     padding: 2rem;

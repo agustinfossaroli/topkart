@@ -1,6 +1,7 @@
+@import 'colors';
+@import 'media-queries';
 footer {
     background-color: $negroNav;
-    margin-bottom: 1rem;
     ul {
         list-style-type: none;
         display: inline-block;
@@ -41,12 +42,11 @@ footer {
     .copy {
         display: inline-block;
         color: $blanco;
-        margin-bottom: 0.8rem;
     }
     @include mobile {
         height: 9rem;
         li {
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
             h4 {
                 font-size: 0.8rem;
             }
@@ -80,12 +80,12 @@ footer {
     @include tablet {
         height: 15rem;
         li {
-            margin-top: 2rem;
+            margin-top: 1.7rem;
             h4 {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
             }
             .info {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
             }
             p {
                 color: $blanco;
@@ -110,7 +110,7 @@ footer {
         }
     .copy {
         margin-left: 2rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     }
     @include dekstop {

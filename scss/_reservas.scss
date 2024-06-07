@@ -1,0 +1,128 @@
+
+.reserva {
+    list-style-type: none;
+    display: inline-block;
+    color: $blanco;
+    text-align: center;
+    width: 100%;
+}
+.espacio {
+    display: inline-block;
+    margin-top: 2rem;
+}
+label {
+    display: inline-block;
+    color: $blanco;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+input, select {
+    display: flex;
+    margin-top: 0.5rem;
+    color: $negro;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.iframe {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-style: solid;
+    width: 100%;
+}
+@include mobile {
+    .reserva {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .textform {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .formulario {
+        width: 20rem;
+    }
+    label {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    input, select {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        width: 20rem;
+    }
+    .iframecont {
+        width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .iframe {
+        height: 30rem;
+    }
+}
+@include tablet {
+    .reserva {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        margin-left: 0 auto;
+    }
+    .textform {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .formulario {
+        width: 25rem;
+        margin: 0 auto;
+    }
+    label {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    input, select {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        width: 20rem;
+    }
+    .iframecont {
+        width: 50rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .iframe {
+        height: 50rem;
+    }
+}
+@include dekstop {
+    .textform {
+        font-size: 3rem;
+    }
+    .formulario {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+    label {
+        margin-top: 1.5rem;
+        font-size: 3rem;
+    }
+    input, select {
+        margin-top: 0.5rem;
+    }
+    .col-lg-6 {
+        font-size: 2rem;
+    }
+    .iframecont {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .iframe {
+        margin-top: 5rem;
+        height: 50rem;
+        width: 50rem;
+    }
+}

@@ -9,7 +9,7 @@
 @import 'media-queries';
 @import 'header';
 @import 'footer';
-
+@import 'reservas';
 
 html {
     font-size: 62.5%;
@@ -65,16 +65,6 @@ html {
             border-color: $negro;
             border-radius: 5%;
         }
-        .reserva {
-            list-style-type: none;
-            display: inline-block;
-            margin-bottom: 4rem;
-            color: $blanco;
-            text-align: center;
-            width: 100%;
-            margin-top: 3rem;
-            margin-left: 1.5rem;
-        }
         .section {
             margin-top: 5rem;
             text-align: center;
@@ -85,61 +75,58 @@ html {
             background-color: $negroNav;
             margin-top: 1rem;
         }
-        .reserva {
-            list-style-type: none;
-            display: inline-block;
-            color: $blanco;
-            text-align: center;
-            width: 100%;
-        }
-        .iframe {
-            padding: 1rem;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            border-style: solid;
-            background-color: $negro;
-            border-width: 1rem;
-            width: 100%;
-        }
-        .espacio {
-            display: inline-block;
-            margin-top: 2rem;
-        }
-        label {
-            display: inline-block;
-            margin-top: 2rem;
-            color: $blanco;
-            font-size: 2.5rem;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-        input, select {
-            display: flex;
-            margin-top: 0.5rem;
-            color: $negro;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            width: 25rem;
-        }
         @include mobile {
             section {
-                margin-top: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+                width: 35rem;
+                margin-left: auto;
+                margin-right: auto;
             }
             h1, h2 {
-                font-size: 1.5rem;
                 color: $blanco;
                 font-family: "PT Serif", serif;
                 font-weight: 700;
                 font-style: normal;
                 text-align: center;
             }
+            .parallax, .parallax-dos, .parallax-tres, .parallax-cuatro {
+                height: 14vh;
+                background-position-x: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .parallax {
+                background-image: url('../assets/kartings.jpg');
+            }
+            .parallax-dos {
+                background-image: url('../assets/cuatriciclo-inicio.jpg');
+            }
+            .parallax-tres {
+                background-image: url('../assets/utv-inicio.jpg');
+            }
+            .parallax-cuatro {
+                background-image: url('../assets/circuitoo.jpg');
+            }
+            .fijo {
+                height: 75%;
+                width: 35rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                a {
+                    text-decoration: none;
+                    h1, h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+                
+            }
             h3 {
                 font-size: 1.8rem;
-            }
-            h4 {
-                font-size: 1.3rem;
             }
             b {
                 font-size: 1.5rem;
@@ -169,38 +156,6 @@ html {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
             }
-            .reserva {
-                margin-bottom: 1.5rem;
-                margin-top: 1.5rem;
-                margin-left: 0 auto;
-            }
-            .textform {
-                font-size: 1.5rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-            .formulario {
-                width: 20rem;
-                margin: 0 auto;
-            }
-            label {
-                margin-top: 1rem;
-                font-size: 1.5rem;
-            }
-            input, select {
-                margin-top: 0.5rem;
-                font-size: 1.5rem;
-                width: 20rem;
-            }
-            .iframecont {
-                width: 30rem;
-                margin: 0 auto;
-                text-align: center;
-                margin-top: 3rem;
-            }
-            .iframe {
-                height: 30rem;
-            }
             .btn-wpp {
                 padding: 0.9rem;
                 bottom: 5rem;
@@ -212,8 +167,33 @@ html {
             }
         }
         @include tablet {
+            
             section {
                 margin-top: 3rem;
+            }
+            .parallax {
+                /* Ajusta el tamaño de la sección parallax */
+                height: 25vh;
+                /* Imagen de fondo */
+                background-image: url('../assets/kart-inicio-t.jpg');
+                /* El fondo se fija cuando se desplaza la página */
+                background-attachment: fixed;
+                /* Posición y tamaño del fondo */
+                background-position-x: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                /* Crea el efecto parallax */
+                transform: translateZ(0.5);
+                perspective: 1px;
+            }
+            .fijo {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.5);
+                background-size: contain;
+                text-align: center;
             }
             h1, h2 {
                 font-size: 3rem;
@@ -226,14 +206,12 @@ html {
             h3 {
                 font-size: 3rem;
             }
-            h4 {
-                font-size: 2rem;
-            }
             b {
                 font-size: 2.5rem;
             }
             button {
                 margin-bottom: 2rem;
+                font-size: 1.5rem;
             }
             .utv {
                 display: flex;
@@ -264,38 +242,7 @@ html {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
             }
-            .reserva {
-                margin-bottom: 1.5rem;
-                margin-top: 1.5rem;
-                margin-left: 0 auto;
-            }
-            .textform {
-                font-size: 2rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-            .formulario {
-                width: 25rem;
-                margin: 0 auto;
-            }
-            label {
-                margin-top: 1rem;
-                font-size: 2rem;
-            }
-            input, select {
-                margin-top: 0.5rem;
-                font-size: 2rem;
-                width: 20rem;
-            }
-            .iframecont {
-                width: 50rem;
-                margin: 0 auto;
-                text-align: center;
-                margin-top: 3rem;
-            }
-            .iframe {
-                height: 50rem;
-            }
+            
             .btn-wpp {
                 padding: 1.5rem;
                 bottom: 8rem;
@@ -310,8 +257,32 @@ html {
             section {
                 margin-top: 4rem;
             }
+            .parallax {
+                /* Ajusta el tamaño de la sección parallax */
+                height: 80vh;
+                /* Imagen de fondo */
+                background-image: url('../assets/kart-inicio.jpg');
+                /* El fondo se fija cuando se desplaza la página */
+                background-attachment: fixed;
+                /* Posición y tamaño del fondo */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* Crea el efecto parallax */
+                transform: translateZ(0.5);
+                perspective: 1px;
+            }
+            .fijo {
+                /* Cubre la sección parallax */
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.5); /*Oscurece un poco la imagen*/
+                text-align: center;
+            }
             h1, h2 {
-                font-size: 5rem;
+                font-size: 7rem;
                 color: $blanco;
                 font-family: "PT Serif", serif;
                 font-weight: 700;
@@ -341,6 +312,7 @@ html {
             }
             .grid-img-c {
                 grid-area: img-c;
+                margin-top: 3rem;
             }
             .grid-reservar {
                 grid-area: boton;
@@ -364,11 +336,11 @@ html {
             }
             .grid-img-cm {
                 grid-area: img-cm;
-                margin-top: 5rem;
+                margin-top: 10rem;
             }
             .grid-imgm {
                 grid-area: imgm;
-                margin-top: 5.3rem;
+                margin-top: 8rem;
             }
             .grid-reserva {
                 grid-area: botonm;
@@ -440,29 +412,9 @@ html {
                 }
             }
             .imgkart {
-                height: 45rem;
-                width: 70rem;
+                height: 38rem;
                 margin-left: 1rem;
-            }
-            .textform {
-                font-size: 3rem;
-            }
-            .iframecont {
-                margin-top: 3rem;
-                text-align: center;
-            }
-            .iframe {
-                margin-top: 10rem;
-                height: 50rem;
-                width: 50rem;
-            }
-            .formulario {
-                width: 30rem;
-                margin: 0 auto;
-                margin-bottom: 3rem;
-            }
-            form {
-                margin-left: 4rem;
+                margin-top: 5rem;
             }
             .btn-wpp {
                 padding: 2rem;
