@@ -6,15 +6,16 @@
 }
 
 @mixin tablet {
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
         @content;
         /*font-size: 35%;*/
     }
 }
 
 @mixin dekstop {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 993px) {
         @content;
         /*font-size: 55%;*/
     }
-}    
+}
+/*992 - 1023*/

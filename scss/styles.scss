@@ -17,6 +17,16 @@ html {
     body {
     background-image: url("../assets/pavimento2.jpg");
     overflow-x: hidden;
+        main {
+            margin-top: 1.5rem;
+        }
+        h1, h2 {
+            color: $blanco;
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+        }
         .img-uno {
             border-top-style: solid;
             border-bottom-style: solid;
@@ -59,6 +69,11 @@ html {
             border-color: $negro;
             border-radius: 2%;
         }
+        .imgcuat {
+            border-style: solid;
+            border-color: $negro;
+            border-radius: 2%;
+        }
         .circuito {
             background-color: #b1b1b19c;
             border-style: solid;
@@ -75,20 +90,21 @@ html {
             background-color: $negroNav;
             margin-top: 1rem;
         }
+        .circuit {
+            color: $amarillo;
+            background-color: $negro;
+            margin: auto;
+            border-radius: 5%;
+        }
+    }
         @include mobile {
+            
             section {
-                margin-top: 3rem;
+                margin-top: 2rem;
                 margin-bottom: 1.5rem;
                 width: 35rem;
                 margin-left: auto;
                 margin-right: auto;
-            }
-            h1, h2 {
-                color: $blanco;
-                font-family: "PT Serif", serif;
-                font-weight: 700;
-                font-style: normal;
-                text-align: center;
             }
             .parallax, .parallax-dos, .parallax-tres, .parallax-cuatro {
                 height: 14vh;
@@ -123,13 +139,17 @@ html {
                         font-size: 1.5rem;
                     }
                 }
-                
             }
             h3 {
                 font-size: 1.8rem;
             }
             b {
                 font-size: 1.5rem;
+            }
+            .circuit {
+                font-size: 1.5rem;
+                width: 14rem;
+                height: 2rem;
             }
             button {
                 margin-bottom: 2rem;
@@ -142,13 +162,17 @@ html {
                 text-align: center;
                 width: 100%;
                 height: auto;
+                background-color: $negroCuatro;
             }
             .imgkart {
-                border-width: 0.2rem;
-                height: 22rem;
-                width: 38rem;
+                width: 90%;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
+            }
+            .imgcuat {
+                width: 90%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
             .circuito {
                 height: 25rem;
@@ -159,7 +183,8 @@ html {
             .btn-wpp {
                 padding: 0.9rem;
                 bottom: 5rem;
-                margin-left: 1rem;
+                margin-left: 1.5rem;
+                margin-bottom: 5rem;
             }
             .svg{
                 width: 1.7rem;
@@ -170,48 +195,65 @@ html {
             
             section {
                 margin-top: 3rem;
+                margin-bottom: 1.5rem;
+                width: 53rem;
+                margin-left: auto;
+                margin-right: auto;
             }
-            .parallax {
-                /* Ajusta el tamaño de la sección parallax */
-                height: 25vh;
-                /* Imagen de fondo */
-                background-image: url('../assets/kart-inicio-t.jpg');
-                /* El fondo se fija cuando se desplaza la página */
-                background-attachment: fixed;
-                /* Posición y tamaño del fondo */
+            .parallax, .parallax-dos, .parallax-tres, .parallax-cuatro {
+                height: 24vh;
                 background-position-x: center;
                 background-repeat: no-repeat;
                 background-size: contain;
-                /* Crea el efecto parallax */
-                transform: translateZ(0.5);
-                perspective: 1px;
+            }
+            .parallax {
+                background-image: url('../assets/kartings.jpg');
+            }
+            .parallax-dos {
+                background-image: url('../assets/cuatriciclo-inicio.jpg');
+            }
+            .parallax-tres {
+                background-image: url('../assets/utv-inicio.jpg');
+            }
+            .parallax-cuatro {
+                background-image: url('../assets/circuitoo.jpg');
             }
             .fijo {
-                height: 100%;
+                height: 75%;
+                width: 60rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: rgba(0, 0, 0, 0.5);
-                background-size: contain;
                 text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                a {
+                    text-decoration: none;
+                    h1, h2 {
+                        font-size: 2.5rem;
+                    }
+                }
             }
-            h1, h2 {
+            h1 {
                 font-size: 3rem;
-                color: $blanco;
-                font-family: "PT Serif", serif;
-                font-weight: 700;
-                font-style: normal;
-                text-align: center;
             }
-            h3 {
+            h2 {
                 font-size: 3rem;
+            }
+            h3, h4 {
+                font-size: 2.5rem;
             }
             b {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             button {
                 margin-bottom: 2rem;
                 font-size: 1.5rem;
+            }
+            .circuit {
+                font-size: 3rem;
+                width: 29rem;
+                height: 4rem;
             }
             .utv {
                 display: flex;
@@ -255,39 +297,49 @@ html {
         }
         @include dekstop {
             section {
-                margin-top: 4rem;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
             }
-            .parallax {
-                /* Ajusta el tamaño de la sección parallax */
-                height: 80vh;
-                /* Imagen de fondo */
-                background-image: url('../assets/kart-inicio.jpg');
-                /* El fondo se fija cuando se desplaza la página */
+            .parallax, .parallax-dos, .parallax-tres, .parallax-cuatro {
+                height: 75vh;
                 background-attachment: fixed;
-                /* Posición y tamaño del fondo */
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                /* Crea el efecto parallax */
                 transform: translateZ(0.5);
                 perspective: 1px;
             }
+            .parallax {
+                background-image: url('../assets/kartings.jpg');
+            }
+            .parallax-dos {
+                background-image: url('../assets/cuatriciclo-inicio.jpg');
+            }
+            .parallax-tres {
+                background-image: url('../assets/utv-inicio.jpg');
+            }
+            .parallax-cuatro {
+                background-image: url('../assets/circuitoo.jpg');
+            }
             .fijo {
-                /* Cubre la sección parallax */
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: rgba(0, 0, 0, 0.5); /*Oscurece un poco la imagen*/
+                background: rgba(0, 0, 0, 0.5);
                 text-align: center;
+                a {
+                    text-decoration: none;
+                    h1, h2 {
+                    &:hover {
+                        color: $amarillo;
+                        font-size: 6.5rem;
+                    }
+                    }
+                }
             }
             h1, h2 {
-                font-size: 7rem;
-                color: $blanco;
-                font-family: "PT Serif", serif;
-                font-weight: 700;
-                font-style: normal;
-                text-align: center;
+                font-size: 6rem;
             }
             .img-uno {
                 &:hover {
@@ -304,6 +356,9 @@ html {
             b {
                 font-size: 3rem;
             }
+            .circuit {
+                font-size: 3rem;
+            }
             .grid-info {
                 grid-area: info;
             }
@@ -312,7 +367,7 @@ html {
             }
             .grid-img-c {
                 grid-area: img-c;
-                margin-top: 3rem;
+                margin-top: 7rem;
             }
             .grid-reservar {
                 grid-area: boton;
@@ -323,7 +378,7 @@ html {
                 height: 110vh;
             }
             .grid-img {
-                margin-top: 8rem;
+                margin-top: 11rem;
             }
             .grid-cont {
                 display: grid;
@@ -355,7 +410,7 @@ html {
             }
             .grid-img-utv {
                 grid-area: img;
-                margin-top: 5.7rem;
+                margin-top: 4rem;
             }
             .grid-imgc-utv {
                 grid-area: imgc;
@@ -414,6 +469,11 @@ html {
             .imgkart {
                 height: 38rem;
                 margin-left: 1rem;
+                margin-top: 7rem;
+            }
+            .imgcuat {
+                height: 38rem;
+                margin-left: 1rem;
                 margin-top: 5rem;
             }
             .btn-wpp {
@@ -430,4 +490,3 @@ html {
             }
         }
     }
-}

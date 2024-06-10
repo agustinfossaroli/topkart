@@ -1,10 +1,15 @@
-
 .reserva {
     list-style-type: none;
     display: inline-block;
     color: $blanco;
     text-align: center;
     width: 100%;
+    margin-bottom: 1rem;
+}
+.r {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .espacio {
     display: inline-block;
@@ -31,27 +36,37 @@ input, select {
     margin-bottom: 3rem;
     border-style: solid;
     width: 100%;
+    border-radius: 5%;
+    
+}
+.calend {
+    justify-content: space-around
+}
+.iframecont {
+    background-color: $negroNav;
+    border-radius: 4%;
 }
 @include mobile {
     .reserva {
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
     }
-    .textform {
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .r {
+        margin-top: 1.5rem;
     }
     .formulario {
         width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     label {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     input, select {
         margin-top: 0.5rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
         width: 20rem;
     }
     .iframecont {
@@ -63,21 +78,24 @@ input, select {
     .iframe {
         height: 30rem;
     }
+    .row {
+        margin-left: auto;
+        width: 100%;
+    }
 }
 @include tablet {
     .reserva {
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
-        margin-left: 0 auto;
+        font-size: 2.3rem;
     }
-    .textform {
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .r {
+        margin-top: 1.5rem;
     }
     .formulario {
         width: 25rem;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     label {
         margin-top: 1rem;
@@ -86,7 +104,7 @@ input, select {
     input, select {
         margin-top: 0.5rem;
         font-size: 2rem;
-        width: 20rem;
+        width: 40rem;
     }
     .iframecont {
         width: 50rem;
@@ -97,14 +115,33 @@ input, select {
     .iframe {
         height: 50rem;
     }
+    .row {
+        margin-left: auto;
+        width: 100%;
+    }
 }
 @include dekstop {
-    .textform {
-        font-size: 3rem;
+    .r {
+        margin-top: 2rem;
+    }
+    .conteiner-fluid {
+        max-width: 1200px;
+        margin: 0 auto;
+    .formulario input,
+    .formulario select,
+    .formulario label {
+        width: 25rem;
+    }
+    .iframe {
+        width: 600px;
+        height: 450px;
     }
     .formulario {
         width: 30rem;
         margin-bottom: 3rem;
+        margin-top: 8rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     label {
         margin-top: 1.5rem;
@@ -112,17 +149,21 @@ input, select {
     }
     input, select {
         margin-top: 0.5rem;
+        border-style: solid;
+        border-color: $negro;
+        border-radius: 5%;
     }
     .col-lg-6 {
         font-size: 2rem;
     }
     .iframecont {
-        margin-top: 3rem;
+        margin-top: 5rem;
         text-align: center;
     }
     .iframe {
-        margin-top: 5rem;
+        margin-top: 3rem;
         height: 50rem;
         width: 50rem;
+    }
     }
 }
